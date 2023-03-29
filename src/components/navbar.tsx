@@ -1,12 +1,24 @@
-import '@/styles/globals.css';
+import Button from './button';
 
 const Navbar = () => {
   return (
-    <div className="h-screen bg-slate-600">
-      <h1>Hello world!</h1>
-      <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
-        Click me
-      </button>
+    <div className="min-h-screen bg-slate-100">
+      <nav>
+        <ul className="flex">
+          <li>
+            <Button>Sign in</Button>
+          </li>
+          <li>
+            <Button>Sign up</Button>
+          </li>
+          <li>
+            <Button>Log in </Button>
+          </li>
+          <li>
+            <Button>Log up</Button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
